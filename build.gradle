@@ -1,0 +1,14 @@
+apply plugin: "java"
+repositories{
+	mavenCentral()
+	mavenLocal()
+}
+dependencies {
+	compile "joda-time:joda-time:2.10.3"
+}
+sourceSets {
+	main.java.srcDir "src/"
+}
+jar {
+	manifest.attributes "Main-Class": "unl/cse/StatisticsDemo"
+}
